@@ -1,0 +1,90 @@
+body {
+  background-color: #90c7e3; /* bgc#90c7e3 */
+  background-image: linear-gradient(to bottom, #fff, #90c7e3);
+  background-repeat: no-repeat;
+  color: #6966b0; /* c#6865CB*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
+}
+#wrapper {
+  background-color: #fff; /* bgc#fff */
+  box-shadow: 3px 3px 3px #333; /* bxsd */
+  margin: auto; /* m:a */
+  min-width: 960px; /* mw960 */
+  max-width: 2048px; /* maw 2048 */
+  width: 80%; /* w80% */
+}
+header {
+  background-color: #010732; /* bgc#010732 */
+  background-image: url(images/sunset.jpg); /* bgi */
+  background-position: right; /* bgdp */
+  background-repeat: no-repeat; /* bgr */
+  color: #f6edfe; /* c#F6EDFE */
+  height: 60px; /* h60 */
+  padding-top: 15px; /* pt15 */
+  text-align: center; /* tac */
+}
+nav {
+  background-color: #fff; /* bgc#fff */
+  font-weight: bold; /* fwb */
+  padding: 1em; /* p1em */
+  text-align: center;
+}
+nav a {
+  text-decoration: none; /* txd */
+}
+main {
+  padding: 1px 20px 20px;
+  display: block;
+}
+h1 {
+  margin-bottom: 0; /* mb0 */
+  margin-top: 0; /* mt0 */
+}
+h1,
+h2,
+h3,
+footer {
+  font-family: Georgia, "Times New Roman", Times, Baskerville, serif;
+}
+h2 {
+  color: #302d75; /* c#302d75 */
+  text-shadow: 1px 1px #ccc;
+}
+
+h3 {
+  color: #003; /* c#003 */
+}
+dt {
+  color: #22026d; /* c#002171 */
+}
+footer {
+  font-size: 75%; /* fz75% */
+  font-style: italic; /* fsi */
+  padding: 2em;
+  text-align: center; /* txa */
+}
+.resort {
+  color: #26246e; /* c#26246e */
+  font-weight: bold; /* fwb */
+}
+#contact {
+  font-size: 90%; /* fz90% */
+}
+#homehero {
+  background-image: url(images/coast.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+}
+#yurthero {
+  background-image: url(images/yurt.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+}
+#trailhero {
+  background-image: url(images/trail.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+}
