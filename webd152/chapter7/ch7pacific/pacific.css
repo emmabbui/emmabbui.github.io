@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea; /* bgc#90c7e3 */
+  color: #6966b0; /* c#6865CB*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
+}
+#wrapper {
+  background-color: #90c7e3; /* bgc#90c7e3*/
+  background-image: linear-gradient(to bottom, #fff, #90c7e3);
+  border: 1px solid #003; /* b1-solid-#003 */
+  box-shadow: 3px 3px 3px #333; /* bxsd */
+  margin: auto; /* m:a */
+  min-width: 960px; /* mw960 */
+  max-width: 2048px; /* maw 2048 */
+  width: 80%; /* w80% */
+}
+header {
+  background-color: #010732; /* bgc#010732 */
+  background-image: url(images/sunset.jpg); /* bgi */
+  background-position: right; /* bgdp */
+  background-repeat: no-repeat; /* bgr */
+  background-size: contain;
+  color: #f6edfe; /* c#F6EDFE */
+  height: 120px; /* h120 */
+  padding-top: 30px; /* pt30 */
+  text-align: center; /* tac */
+}
+header a {
+  text-decoration: none; /* tdn */
+}
+header a:link,
+header a:visited {
+  color: #fff;
+}
+header a:hover {
+  color: #90c7e3;
+}
+nav {
+  float: left; /* fl */
+  font-size: 120%; /* fz120% */
+  font-weight: bold; /* fwb */
+  padding: 1.5em 1em; /* p1em */
+  width: 160px; /* w160 */
+}
+
+nav ul {
+  font-size: 1.2em; /* fz1.2em */
+  list-style-type: none; /* listn */
+  margin: 0; /*m0 */
+  padding-left: 0;
+}
+nav a {
+  text-decoration: none; /* txd */
+}
+nav a:link {
+  color: #5c7fa3; /* c#5c7fa3 */
+}
+nav a:visited {
+  color: #344873; /* c#344873 */
+}
+nav a:hover {
+  color: #852a2a;
+}
+main {
+  background-color: #fff; /* bgc#fff */
+  margin-left: 190px; /* ml190 */
+  padding: 1px 20px 20px 30px;
+  display: block;
+  overflow: auto; /* ova */
+}
+section {
+  float: left; /* fl */
+  padding-left: 2em; /* pl2em */
+  padding-right: 2em; /* pr2em */
+  width: 33%;
+}
+h1 {
+  font-size: 3em; /* fz3em */
+  letter-spacing: 0.25em; /* lts.25em */
+  margin-bottom: 0; /* mb0 */
+  margin-top: 0; /* mt0 */
+}
+h1,
+h2,
+h3,
+footer {
+  font-family: Georgia, "Times New Roman", Times, Baskerville, serif;
+}
+h2 {
+  color: #302d75; /* c#302d75 */
+  text-shadow: 1px 1px #ccc;
+}
+
+h3 {
+  color: #003; /* c#003 */
+}
+dt {
+  color: #22026d; /* c#002171 */
+}
+footer {
+  font-size: 75%; /* fz75% */
+  font-style: italic; /* fsi */
+  margin-left: 190px; /* ml190 */
+  background-color: #fff;
+  padding: 2em;
+  text-align: center; /* txa */
+}
+.resort {
+  color: #26246e; /* c#26246e */
+  font-weight: bold; /* fwb */
+}
+#contact {
+  font-size: 90%; /* fz90% */
+}
+#homehero {
+  background-image: url(images/coast2.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+  margin-left: 190px; /* ml190 */
+}
+#yurthero {
+  background-image: url(images/yurt.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+  margin-left: 190px; /* ml190 */
+}
+#trailhero {
+  background-image: url(images/trail.jpg); /* bgi */
+  background-repeat: no-repeat; /* bgr */
+  background-size: 100% 100%; /* bgz100%100% */
+  height: 300px; /* h300 */
+  margin-left: 190px; /* ml190 */
+}
