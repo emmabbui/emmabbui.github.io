@@ -5,11 +5,15 @@
 body {
   background-color: #eaf0e7; /* bgc#eaf0e7 */
   color: #526863; /* c#526863 */
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; /* ffa */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
 }
 
 header {
   background-color: #a1cca5; /* bgc#a1cca5 */
+  background-image: url(images/vine.jpg);
+  background-image: linear-gradient(to right, #a1cca5, #eaf0e7);
+  background-position: right;
+  background-repeat: no-repeat;
   background-size: contain;
   color: #eaf0e7; /* c#F6EDFE */
   padding: 0.5em;
@@ -29,13 +33,16 @@ nav {
   font-size: 120%; /* fz120% */
   font-weight: bold; /* fwb */
   padding: 0; /* p0 */
-  text-align: center; /* tac */ 
+  text-align: center; /* tac */
 }
 nav ul {
   font-size: 1.2em; /* fz1.2em */
   list-style-type: none; /* listn */
   margin: 0; /*m0 */
   padding-left: 0;
+}
+nav li {
+  border-bottom: 1px solid #f1f1f1;
 }
 nav a {
   text-decoration: none; /* txd */
@@ -60,14 +67,16 @@ ul {
 li {
   float: left;
 }
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: #a1cca5;
 }
 li.dropdown {
@@ -79,7 +88,7 @@ li.dropdown {
   position: absolute;
   background-color: #eaf0e7;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -91,50 +100,59 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
 ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-ul.topnav li {float: left;}
-  
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-  ul.topnav li a.active {background-color: #04AA6D;}
-  
-  ul.topnav li.right {float: right;}
-  
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  <ul class="topnav"> {
-    <li><a class="active" href="home">Home</a></li>
-    <li><a href="ourteam">Our Team</a></li>
-    <li><a href="services">Services</a></li>
-    <li><a href="appointments">Appointments</a></li>
-    <li class="right"><a href="#login">Login</a></li>
-  </ul>
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+#images {
+  display: grid;
+  gap: 2em;
+}
+
+#images img {
+  box-shadow: 10px 10px 10px #777;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
   }
-  
-  <div style="padding: 16px;">
-    <h2>Responsive Topnav </h2>
+}
