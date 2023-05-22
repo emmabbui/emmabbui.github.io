@@ -8,8 +8,19 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa */
 }
 
+.button {
+  display: inline-block;
+  background-color: #526863;
+  padding: 20px;
+  color: #eaf0e7;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
 header {
-  background-color: #eaf0e7; /* bgc#a1cca5 */
+  background-color: #eaf0e7; /* bgc# */
   background-image: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.1),
@@ -37,7 +48,7 @@ header a:visited {
   color: #fff;
 }
 header a:hover {
-  color: #90c7e3;
+  color: #a1cca5;
 }
 nav {
   font-size: 120%; /* fz120% */
@@ -167,6 +178,17 @@ footer {
   width: 100%;
 }
 
+#gallery2 {
+  display: grid;
+  gap: 2em;
+}
+
+#gallery2 img {
+  box-shadow: 10px 10px 10px #777;
+  text-align: center;
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   header {
     background-image: none;
@@ -212,6 +234,9 @@ footer {
   #gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  #gallery2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   nav {
@@ -236,10 +261,16 @@ footer {
     #gallery {
       grid-area: gallery;
     }
+    #gallery2 {
+      grid-area: gallery;
+    }
     footer {
       grid-area: footer;
     }
     #gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #gallery2 {
       grid-template-columns: repeat(3, 1fr);
     }
   }
