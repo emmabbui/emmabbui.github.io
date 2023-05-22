@@ -15,7 +15,7 @@ header {
       rgba(255, 255, 255, 0.1),
       rgba(161, 204, 165, 1)
     ),
-    url(images/vine2.png);
+    url(images/vine.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,9 +51,6 @@ nav ul {
   margin: 0; /*m0 */
   padding-left: 0;
 }
-nav li {
-  border-bottom: 1px solid #f1f1f1;
-}
 nav a {
   text-decoration: none; /* txd */
   transition: color 2s ease-out;
@@ -62,10 +59,16 @@ nav a:link {
   color: #eaf0e7; /* c#eaf0e7 */
 }
 nav a:visited {
-  color: #8c92ac; /* c#8c92ac */
+  color: #c0c6e2; /* c#8c92ac */
 }
 nav a:hover {
   color: #715c83;
+}
+main {
+  background-color: #fff; /* bgc#fff */
+  padding: 1px 20px 20px 30px;
+  display: block;
+  overflow: auto; /* ova */
 }
 ul {
   list-style-type: none;
@@ -149,6 +152,10 @@ ul.topnav li a.active {
 ul.topnav li.right {
   float: right;
 }
+footer {
+  font-family: Georgia, "Times New Roman", Times, Baskerville, serif;
+}
+
 #gallery {
   display: grid;
   gap: 2em;
@@ -164,10 +171,14 @@ ul.topnav li.right {
   header {
     background-image: none;
   }
-  #homehero,
-  #ourteamhero,
-  #policieshero {
+  #hairhero,
+  #eyelasheshero,
+  #nailshero {
     background-size: auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
   }
   ul.topnav li.right,
   ul.topnav li {
@@ -194,7 +205,6 @@ ul.topnav li.right {
   }
   form {
     display: grid;
-
     grid-template-columns: 6em 1fr;
     gap: 1em;
     max-width: 30em; /*maw30em */
