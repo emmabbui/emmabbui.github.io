@@ -51,9 +51,6 @@ nav ul {
   margin: 0; /*m0 */
   padding-left: 0;
 }
-nav li {
-  border-bottom: 1px solid #f1f1f1;
-}
 nav a {
   text-decoration: none; /* txd */
   transition: color 2s ease-out;
@@ -174,8 +171,14 @@ footer {
   header {
     background-image: none;
   }
-  #homehero {
+  #hairhero,
+  #eyelasheshero,
+  #nailshero {
     background-size: auto;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
   }
   ul.topnav li.right,
   ul.topnav li {
