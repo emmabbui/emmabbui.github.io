@@ -99,7 +99,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #eaf0e7;
+  background-color: #314641;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -170,11 +170,6 @@ footer {
 @media (max-width: 600px) {
   header {
     background-image: none;
-  }
-  #hairhero,
-  #eyelasheshero,
-  #nailshero {
-    background-size: auto;
   }
   nav ul {
     display: flex;
