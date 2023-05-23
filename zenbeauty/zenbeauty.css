@@ -61,6 +61,10 @@ nav ul {
   list-style-type: none; /* listn */
   margin: 0; /*m0 */
   padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #314641;
 }
 nav a {
   text-decoration: none; /* txd */
@@ -81,13 +85,7 @@ main {
   display: block;
   overflow: auto; /* ova */
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #314641;
-}
+
 li {
   float: left;
 }
@@ -189,9 +187,33 @@ footer {
   width: 100%;
 }
 
+#hair {
+  gap: 2em;
+  padding-top: 12px;
+}
+#hair img {
+  box-shadow: 10px 10px 10px #777;
+  max-width: 100%;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#basic-hair-services,
+#hair-coloring-styling {
+  display: flex; /* df */
+  flex-direction: column; /* fdr */
+}
+
 @media (max-width: 600px) {
   header {
-    background-image: none;
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.1),
+      rgba(161, 204, 165, 1)
+    );
   }
   nav ul {
     display: flex;
@@ -200,6 +222,11 @@ footer {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
+  }
+  .col-25,
+  .col-75 {
+    width: 100%;
+    margin-top: 0;
   }
 }
 @media (min-width: 600px) {
@@ -222,14 +249,14 @@ footer {
   }
   form {
     display: grid;
-    grid-template-columns: 6em 1fr;
+    grid-template-columns: 2fr;
     gap: 1em;
     max-width: 30em; /*maw30em */
     width: 60%;
   }
   input [type="submit"] {
     grid-column: 2 / 3;
-    width: 9em;
+    width: 20em;
   }
   #gallery {
     grid-template-columns: repeat(2, 1fr);
