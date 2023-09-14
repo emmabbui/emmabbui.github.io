@@ -1,38 +1,3 @@
-
-2 of 3,478
-webd167 ch 2
-Inbox
-
-Emma Bui
-Attachments11:51 AM (9 hours ago)
- 
-
-Danny le
-Attachments
-4:18 PM (4 hours ago)
-to me
-
-ahoy ems
-
-
-I made some adjustments to make sure the file worked so added the "for" attributes to your <label> tags and
-I also made the "name" attributes reflect the "for" attributes so the labels would be tied to the input fields like the prof mentioned in one of his zoom vids I think.
-Also made sure that you had unique ID's for the radio choices and I added an error message in the PHP code too but if you dont want that you can scrap it ( you should see it in the comments)
-
-
-make sure to download it, place a copy in your htdocs folder and check it on the browser like last time and lmk
-
-From: Emma Bui <emmaabbui@gmail.com>
-Sent: Friday, September 8, 2023 11:51 AM
-To: Danny le <dle011@student.sdccd.edu>
-Subject: webd167 ch 2
- 
-[EXTERNAL Email: Do not click any links or open attachments if you do not trust the sender and know the content is safe.]
-
-
- One attachment
-  •  Scanned by Gmail
-Awesome, thanks!This is great, thank you so much!Haha, thanks!
 <!DOCTYPE html> <!-- Emma Bui | Sept. 6, 2023 | Ch. 2 Assignment -->
 <html lang="en">
 
