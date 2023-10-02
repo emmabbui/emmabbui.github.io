@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Emma Bui, Calculator, September 12, 2023 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      td {
+        border: 1px solid #800080;
+        min-width: 40px;
+        cursor: pointer;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function calculate(numEntered) {
+        if (numEntered === "C") {
+          document.getElementById("result").value = "";
+        } else if (numEntered == "=") {
+          document.getElementById("result").value = eval(
+            document.getElementById("result").value
+          );
+        } else {
+          document.getElementById("result").value += numEntered;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2"><input type="text" id="result" disabled="" /></td>
+          <td colspan="1" onclick="calculate('C')">C</td>
+          <td colspan="1" onclick="calculate('+')">+</td>
+        </tr>
+        <tr>
+          <td colspan="1" onclick="calculate(1);">1</td>
+          <td colspan="1" onclick="calculate(2);">2</td>
+          <td colspan="1" onclick="calculate(3);">3</td>
+          <td colspan="1" onclick="calculate('-')">-</td>
+        </tr>
+        <tr>
+          <td colspan="1" onclick="calculate(4);">4</td>
+          <td colspan="1" onclick="calculate(5);">5</td>
+          <td colspan="1" onclick="calculate(6);">6</td>
+          <td colspan="1" onclick="calculate('*')">*</td>
+        </tr>
+        <tr>
+          <td colspan="1" onclick="calculate(7);">7</td>
+          <td colspan="1" onclick="calculate(8);">8</td>
+          <td colspan="1" onclick="calculate(9);">9</td>
+          <td colspan="1" onclick="calculate('/')">/</td>
+        </tr>
+        <tr>
+          <td colspan="2" onclick="calculate(0);">0</td>
+          <td colspan="1" onclick="calculate('.');">.</td>
+          <td colspan="1" onclick="calculate('=')">=</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
