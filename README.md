@@ -1,4 +1,4 @@
 # emmabbui.github.io
 
 ## nothing here
-yet..
+experimenting, and having fun!
