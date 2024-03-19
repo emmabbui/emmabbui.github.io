@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- Emma Bui, Assignment 7 Arrays -->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Order Form</title>
+
+    <style>
+        body {
+            font-family: arial;
+            font-size: 100%;
+            background-color: #000;
+            background-image: url(https://image.freepik.com/free-photo/crop-pizza-black_23-2147749510.jpg);
+            background-repeat: no-repeat;
+           
+            background-size: 100%;
+        }
+        
+        #outer {
+            width: 60%;
+            margin: 20px auto 50px 20px;
+            padding: 10px;
+            border: 1px solid #a8a8a8;
+            box-shadow: 0px 0px 20px #a8a8a8;
+            background-color: #f5f5f5;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+        }
+        
+        h3 {
+            font-size: 1.25em;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        div {
+            margin-bottom: 25px;
+        }
+        
+        .container{
+            display:flex;
+            justify-content: space-around;
+        }
+        
+        .container div {
+            flex-basis: 25%;
+        }
+
+        
+        .textbox {
+            width: 15em;
+            margin-bottom: .2em;
+        }
+        
+        input[type=submit],
+        input[type=reset] {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section id="outer">
+       
+    <header>
+        <h1 class="red">Pizza Express</h1>
+        <h2>Ready for pick up in 15 minutes!</h2>
+        <h3>One size (12") includes cheese $7.95</h3>
+    </header>
+              
+
+        <form action= method="post">
+
+            <div>
+                <label for="name">Name:</label>
+                <input name="name" id="name" class="textbox" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" name="phone" id="phone" class="textbox" required>
+            </div>
+
+            <p>Choose your toppings - $1.00 per additional topping</p>
+
+           <div class="container">
+                <div>
+                    <input type="checkbox" name="topping" id="xcheese" value="extra cheese">
+                    <label for="xcheese">Extra Cheese</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="sausage" value="sausage">
+                    <label for="sausage">Sausage</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="topping" id="meatball" value="meatball">
+                    <label for="meatball">Meatball</label>
+                </div>                 
+            </div>
+            
+        
+           <div class="container">            
+                <div>
+                    <input type="checkbox" name="topping" id="tomato" value="tomato">
+                    <label for="tomato">Tomato</label>
+                </div>                   
+
+                <div>
+                    <input type="checkbox" name="topping" id="onion" value="onion">
+                    <label for="onion">Onion</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="olives" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="peppers" value="peppers">
+                    <label for="peppers">Peppers</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <div>
+                    <input type="checkbox" name="topping" id="mushroom" value="mushroom">
+                    <label for="mushroom">Mushroom</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="spinach" value="spinach">
+                    <label for="spinach">Spinach</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="topping" id="garlic" value="garlic">
+                    <label for="garlic">Garlic</label>
+                </div>      
+
+                <div>
+                    <input type="checkbox" name="topping" id="cilantro" value="cilantro">
+                    <label for="cilantro">Cilantro</label>
+                </div> 
+            </div>                        
+
+            <input type="submit" value="Send Pizza Order">
+
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>

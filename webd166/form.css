@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #666666;
+}
+main {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+h1 {
+    color: navy;
+    padding: 0;
+    margin: 1em 0 .5em .5em;
+}
+p {
+    margin: 1.5em 0 .5em 0;
+}
+fieldset {
+    margin: 0;
+    margin-bottom: .5em;
+    padding-left: 1em;
+}
+label {
+    width: 10em;
+    float: left;
+    margin-right: 1em;
+    text-align: right;
+    margin-bottom: .2em;
+}
+input {
+    float: left;
+}
+br {
+    clear: left;
+    margin-bottom: .2em;
+}
+.textbox {
+    width: 15em;
+    margin-bottom: .2em;
+}
+
+[type=submit], [type=reset] {
+     margin: 1.5em 0 .5em 0;
+    width: 100px;
+    font-size: 1em;
+}
