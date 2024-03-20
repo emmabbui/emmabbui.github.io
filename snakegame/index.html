@@ -216,9 +216,8 @@ function gameOver() {
   // Check if the user clicked OK
   if (restartConfirmed) {
     restartGame();
+    redraw(); // Restart the draw loop
   }
-  // Pause draw loop
-  noLoop();
 }
 
 </script>
