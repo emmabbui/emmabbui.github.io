@@ -1,4 +1,8 @@
 # emmabbui.github.io
 
-## nothing here
-experimenting, and having fun!
+## About me
+
+This is a portfolio of some of the projects I've worked on.
+Thank you
+
+- Emma
