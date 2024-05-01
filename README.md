@@ -5,4 +5,4 @@
 This is a portfolio of some of the projects I've worked on.
 Thank you
 
-- Emma
+<3 Emma
