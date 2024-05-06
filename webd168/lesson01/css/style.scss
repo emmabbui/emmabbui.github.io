@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+$colors: (
+  primary: #023867,
+  primary-light: lighten(#023867, 40%),
+  accent: #fcae28,
+);
+
+$font-main: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+$padding: 15px;
+$borders: 15px;
+
+$tablet: 800px;
+$mobile: 576px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +30,7 @@
 body {
   background-color: #ffc8c8;
   color: #790604;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $font-main; /* Uses given font family */
   text-align: center;
 }
 
@@ -20,16 +45,8 @@ header {
 }
 
 header a {
-  text-decoration: none;
-  transition: color 1.5s ease-out;
-}
-
-header a:link {
   color: #fff;
-}
-
-header a:hover {
-  color: #ffc8c8;
+  text-decoration: none;
 }
 
 nav {
@@ -51,7 +68,7 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none; /* Remove link underline */
+  text-decoration: none;
   transition: color 1.5s ease-out;
 }
 
@@ -65,7 +82,7 @@ nav a:hover {
 
 main {
   background-color: #f9e6e6;
-  padding: 1px 20px 20px 30px;
+  padding: 1px $padding 20px $padding;
   display: block;
   overflow: auto;
 }
@@ -79,7 +96,7 @@ li a,
   display: block;
   color: #790604;
   text-align: center;
-  padding: 14px 16px;
+  padding: $padding;
   text-decoration: none;
 }
 
@@ -87,40 +104,8 @@ li a:hover {
   background-color: #ffc8c8;
 }
 
-ul.topnav li {
-  float: center;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li.right {
-  float: center;
-}
-
-footer {
-  font-family: Georgia, "Times New Roman", Times, Baskerville, serif;
-}
-
-#photo {
-  max-width: 100%;
-}
-
-#photo img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 10px 10px 10px #777;
-  text-align: center;
-  width: 100%;
-}
-
 .container {
-  border-radius: 5px;
+  border-radius: $borders;
   background-color: #f9e6e6;
-  padding: 20px;
+  padding: $padding;
 }

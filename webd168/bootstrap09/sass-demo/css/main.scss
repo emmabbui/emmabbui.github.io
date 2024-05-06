@@ -20,9 +20,6 @@ $mobile: 576px;
     @content;
   }
 }
-// @function function-name($args) {
-//   @return value-to-be-returned;
-// }
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
