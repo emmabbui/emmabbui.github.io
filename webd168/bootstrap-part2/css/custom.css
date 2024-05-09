@@ -1,0 +1,17 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #ff9966;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+#header1 {
+  background-color: #ff9966;
+}/*# sourceMappingURL=custom.css.map */
