@@ -9,6 +9,15 @@ body {
   text-align: center;
 }
 
+body main img.photo-fade {
+  opacity: 0.5; /* opacity to 50% */
+  transition: 5s ease; /* add transition effect */
+}
+
+body main img.photo-fade:hover {
+  opacity: 1; /* opacity to 100% */
+}
+
 header {
   background-color: #410807;
   background-position: right;
@@ -83,4 +92,4 @@ li a:hover {
   border-radius: 15px;
   background-color: #f9e6e6;
   padding: 15px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

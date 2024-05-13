@@ -32,6 +32,7 @@ body {
   text-align: center;
 }
 
+
 header {
   background-color: #410807;
   background-position: right;
@@ -106,4 +107,25 @@ li a:hover {
   border-radius: $borders;
   background-color: #f9e6e6;
   padding: $padding;
+}
+.three-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.three-column > * {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.three-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .three-column > * {
+    flex-basis: 100%;
+  }
 }
