@@ -1,0 +1,137 @@
+/* CSS Document */
+/* Emma Bui, Lesson 11 */
+body {
+  height: 100%;
+  width: 85%;
+  margin: 1em auto 0;
+  font: 90%/1.5 Georgia, "Times New Roman", serif;
+  background-image: linear-gradient(to top, lightblue, white);
+}
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d1f59;
+  text-align: center;
+}
+button {
+  text-transform: uppercase;
+  background-color: lightblue;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+}
+.buttons {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.blue-eyes .eye-color {
+  fill: #175282;
+}
+.sad .mouth {
+  transform: rotate(180deg) scale(0.5);
+  transform-origin: 340px 390px;
+}
+
+@keyframes moveEyes {
+  20% {
+    transform: translate(-18px, -20px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(18px, -20px);
+  }
+}
+.move-around .inner-eye-group {
+  animation: moveEyes 10s infinite;
+}
+
+@keyframes leftWhiskers {
+  20% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+}
+.move-around .left-whiskers {
+  animation: leftWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+
+@keyframes rightWhiskers {
+  5% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(7deg);
+  }
+}
+.move-around .right-whiskers {
+  animation: rightWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+
+@keyframes move {
+  20% {
+    transform: rotateY(10deg) rotateX(10deg);
+  }
+  40% {
+    transform: rotateY(25deg) rotateX(10deg);
+  }
+  60% {
+    transform: rotateY(-10deg) rotateX(-10deg);
+  }
+  85% {
+    transform: rotateY(-10deg) rotateX(-16deg);
+  }
+}
+.move-around {
+  animation: move 8s infinite;
+}
+.svg-container {
+  perspective: 1000px;
+}
+
+/* flexbox two column layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container p {
+  flex: 1;
+  margin: 0 10px;
+  font-style: italic;
+}
+
+/* Whiskers in a different color and bold */
+.highlight {
+  color: #848484;
+  font-weight: bold;
+}
+
+/* responsive design layout */
+/* make paragraphs in one column on small media devices */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container p {
+    margin: 10px 0;
+  }
+
+  /* vertical buttons */
+  .buttons {
+    flex-direction: column;
+  }
+  /* keeps svg image centered in media screen*/
+  .svg-container svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
