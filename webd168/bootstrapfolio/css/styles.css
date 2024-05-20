@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc8c8;
+  color: #790604;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+img.photo-fade {
+  opacity: 0.5;
+  transition: 5s ease;
+}
+
+img.photo-fade:hover {
+  opacity: 1;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #790604;
+  transition: color 1.5s ease-out;
+}
+
+.nav-link:hover {
+  color: #d29a99;
+}
+
+footer {
+  background-color: #410807;
+  color: #f9e6e6;
+  padding: 1em;
+}
+
+/* Remove default list styling for the navbar */
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-nav .nav-item {
+  float: left;
+}
+
+.navbar-nav .nav-link {
+  padding: 15px;
+}
+
+/* Add custom styles for main content area */
+main {
+  background-color: #f9e6e6;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* Style for the container of the main section */
+.container {
+  border-radius: 15px;
+  background-color: #f9e6e6;
+  padding: 15px;
+}
+
+/* Additional custom styles for text and images in the main section */
+h2,
+h3 {
+  color: #790604;
+}
+
+p {
+  color: #790604;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add extra spacing below the section */
+.section-spacing {
+  margin-bottom: 3rem; /* You can adjust this value as needed */
+}
+
+/* Hero Section Styles */
+section.hero-section {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section#hero-section {
+  background-image: url(https://ravengate.co.uk/wp-content/uploads/2021/05/bluesky.jpg);
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}

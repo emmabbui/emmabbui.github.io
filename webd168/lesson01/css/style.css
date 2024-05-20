@@ -9,15 +9,6 @@ body {
   text-align: center;
 }
 
-body main img.photo-fade {
-  opacity: 0.5; /* opacity to 50% */
-  transition: 5s ease; /* add transition effect */
-}
-
-body main img.photo-fade:hover {
-  opacity: 1; /* opacity to 100% */
-}
-
 header {
   background-color: #410807;
   background-position: right;
@@ -92,4 +83,26 @@ li a:hover {
   border-radius: 15px;
   background-color: #f9e6e6;
   padding: 15px;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.three-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.three-column > * {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.three-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .three-column > * {
+    flex-basis: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
