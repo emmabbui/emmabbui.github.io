@@ -38,7 +38,6 @@ footer {
   padding: 1em;
 }
 
-/* Remove default list styling for the navbar */
 .navbar-nav {
   list-style: none;
   padding-left: 0;
@@ -60,14 +59,12 @@ main {
   margin-top: 20px;
 }
 
-/* Style for the container of the main section */
 .container {
   border-radius: 15px;
   background-color: #f9e6e6;
   padding: 15px;
 }
 
-/* Additional custom styles for text and images in the main section */
 h2,
 h3 {
   color: #790604;
@@ -79,15 +76,20 @@ p {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
+  width: 250px;
 }
 
-/* Add extra spacing below the section */
+img.project {
+  height: 100px;
+  width: 100px;
+}
+
 .section-spacing {
-  margin-bottom: 3rem; /* You can adjust this value as needed */
+  margin-bottom: 3rem;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 section.hero-section {
   width: 100%;
   height: 500px;
@@ -108,4 +110,14 @@ section#hero-section {
 
 .hero-section p {
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5em;
+  }
 }
