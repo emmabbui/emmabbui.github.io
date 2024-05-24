@@ -9,11 +9,13 @@ body {
   text-align: center;
 }
 
+// add photo fade transition
 img.photo-fade {
   opacity: 0.5;
   transition: 5s ease;
 }
 
+// makes photo appear non transparent when mouse is over
 img.photo-fade:hover {
   opacity: 1;
 }
@@ -79,6 +81,7 @@ img {
   width: 250px;
 }
 
+// adjusted images to be small
 img.project {
   height: 100px;
   width: 100px;
@@ -88,9 +91,11 @@ img.project {
   margin-bottom: 3rem;
 }
 
+// hero section
 section.hero-section {
   width: 100%;
   height: 500px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,8 +114,8 @@ section#hero-section {
   font-size: 1.25rem;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -126,7 +131,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #790604;
   color: white;
   padding: 12px 20px;
@@ -160,23 +165,28 @@ input[type=submit] {
   clear: both;
 }
 
+// media query for tablet sizes
+
 @media (max-width: 768px) {
   .col-md-4 {
     flex: 1 1 100%;
     max-width: 100%;
   }
+
   #exp {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 600px) {
   .col-25,
   .col-75,
-  input[type=submit] {
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
 }
+
 @media screen and (max-width: 991.98px) {
   .navbar-nav {
     flex-direction: column;
@@ -185,4 +195,4 @@ input[type=submit] {
   .navbar-nav .nav-item {
     margin-bottom: 0.5em;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
