@@ -8,12 +8,18 @@ body {
 }
 
 /* Navigation */
+nav {
+  background-color: transparent;
+  padding: 1rem 0;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -21,19 +27,30 @@ nav a {
   color: #2e0b0b;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a96bbf;
 }
 
 /* Hero */
+.hero {
+  padding: 5rem 1rem 2rem;
+}
+
 .hero h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
+  font-family: "Quicksand", sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #2e0b0b;
   width: 0;
   animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
-  font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 
 /* Cursor blink */
@@ -47,20 +64,35 @@ h2,
 h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Paragraphs */
 p {
   font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
 
 /* Skills */
+.skills {
+  padding: 2rem 1rem;
+}
+
 .skills p {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: #4a2c5e;
+  margin: 0.5rem auto;
+  max-width: 600px;
 }
 
 /* Animations */
+
+/* Hero Hello blinking cursor */
 @keyframes typing {
   from {
     width: 0;
