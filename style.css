@@ -2,11 +2,17 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  background-color: #E6DEF3;
-  color: #271B1C;
+  background-color: #e6def3;
+  color: #271b1c;
   text-align: center;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
 /* Navigation */
 nav {
   background-color: transparent;
@@ -16,7 +22,6 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2.5rem;
   padding: 0;
   margin: 0;
@@ -24,7 +29,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #271B1C;
+  color: #271b1c;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
@@ -47,7 +52,7 @@ nav a:hover {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #271B1C;
+  border-right: 3px solid #271b1c;
   width: 0;
   animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
   margin: 0;
