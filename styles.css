@@ -1,4 +1,4 @@
-/* Body styles */
+/* BODY STYLES */
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -11,7 +11,7 @@ body {
 h2,
 h3 {
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -22,6 +22,9 @@ p {
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto 1.5rem;
+}
+.section {
+  padding-top: 150px;
 }
 
 /* Navigation */
@@ -47,6 +50,7 @@ header.navbar:hover {
   padding: 10px;
   width: auto;
 }
+
 nav {
   padding: 2rem;
 }
@@ -61,14 +65,15 @@ nav a {
   text-decoration: none;
   color: #271b1c;
   font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 nav a:hover {
   color: #a96bbf;
 }
 
+/* HOME/MAIN PAGE */
 /* Hero/intro */
 .hero {
   padding: 5rem 1rem 2rem;
@@ -96,7 +101,6 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 10px 20px;
   background-color: #fcfcfc;
   width: 100%;
   height: 250px;
@@ -106,62 +110,135 @@ nav a:hover {
 .intro-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   text-align: left;
   height: 100%;
-  padding: 0 10px; /* optional spacing inside text blocks */
+  padding: 0 30px;
+  margin-top: 24px;
 }
-
 .intro-img {
   display: flex;
   justify-content: right;
   align-items: center;
   height: 100%;
 }
-
 .intro-img img {
-  width: 200px; /* resize the image */
+  width: 230px;
   height: auto;
   object-fit: cover;
   display: block;
 }
 
-/* Cursor blink */
+/* Cursor blink HELLO! */
 .cursor {
   display: inline-block;
   animation: blink 0.8s step-end infinite;
 }
 
-/* Arrow */
+/* Arrow leading to About*/
+.arrow {
+  padding-bottom: 5rem;
+}
 .scroll-down {
   display: inline-block;
   margin-top: 2rem;
   animation: bounce 2s infinite;
 }
 .scroll-down img {
-  width: 40px; /* Adjust as needed */
+  width: 40px;
   height: auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .scroll-down:hover img {
   transform: translateY(5px);
 }
 
+/* About me section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+.about p {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: left;
+}
+#about {
+  margin-top: 100px;
+  scroll-margin-top: 100px;
+}
+
 /* Skills */
+.skill {
+  float: left;
+  text-align: center;
+  justify-content: center;
+  width: 25%;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.skill img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .skills {
-  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*allows wrapping on small screens */
+  margin: 0 auto;
+  padding: 20px 0;
 }
 .skills p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.95rem;
   color: #4a2c5e;
   margin: 0.5rem auto;
-  max-width: 600px;
+  max-width: 400px;
+}
+.skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Project */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 by 2 */
+}
+.project {
+  padding: 10px;
+}
+.project:hover img {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.project img {
+  width: 300px;
+  height: 240px;
 }
 
 /* Animations */
 
+/* HOME/MAIN PAGE */
+/* Arrow Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
 /* Arrow moves */
 @keyframes bounce {
   0%,
@@ -188,7 +265,7 @@ nav a:hover {
   }
 }
 
-/* Media queries */
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
