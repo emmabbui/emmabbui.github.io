@@ -5,46 +5,74 @@ body {
   background-color: #e6def3;
   color: #271b1c;
   text-align: center;
+  padding-top: 100px;
+}
+/* Heading */
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/* Paragraphs */
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
 
-header {
+/* Navigation */
+header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  background-color: rgba(230, 222, 243, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px); /* semi-transparent bg */
 }
-/* Navigation */
-nav {
-  background-color: transparent;
-  padding: 1rem 0;
+header.navbar:hover {
+  background-color: rgba(230, 222, 243, 0.8);
 }
 
+.logo img {
+  height: 100px;
+  padding: 10px;
+  width: auto;
+}
+nav {
+  padding: 2rem;
+}
 nav ul {
   list-style: none;
   display: flex;
   gap: 2.5rem;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
-
 nav a {
   text-decoration: none;
   color: #271b1c;
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
-
 nav a:hover {
   color: #a96bbf;
 }
 
-/* Hero */
+/* Hero/intro */
 .hero {
   padding: 5rem 1rem 2rem;
 }
-
 .hero h1 {
   font-size: 6rem;
   font-weight: 700;
@@ -57,6 +85,47 @@ nav a:hover {
   animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
   margin: 0;
 }
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6def3;
+}
+
+.rectangle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 250px;
+  max-width: 1000px;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  height: 100%;
+  padding: 0 10px; /* optional spacing inside text blocks */
+}
+
+.intro-img {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+
+.intro-img img {
+  width: 200px; /* resize the image */
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 
 /* Cursor blink */
 .cursor {
@@ -64,29 +133,25 @@ nav a:hover {
   animation: blink 0.8s step-end infinite;
 }
 
-/* Heading */
-h2,
-h3 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+/* Arrow */
+.scroll-down {
+  display: inline-block;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
 }
-
-/* Paragraphs */
-p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
+.scroll-down img {
+  width: 40px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.scroll-down:hover img {
+  transform: translateY(5px);
 }
 
 /* Skills */
 .skills {
   padding: 2rem 1rem;
 }
-
 .skills p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.95rem;
@@ -97,7 +162,18 @@ p {
 
 /* Animations */
 
-/* Hero Hello blinking cursor */
+/* Arrow moves */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Hello blinking cursor */
 @keyframes typing {
   from {
     width: 0;
@@ -106,7 +182,6 @@ p {
     width: 6ch;
   }
 }
-
 @keyframes blink {
   50% {
     border-color: transparent;

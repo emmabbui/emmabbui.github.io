@@ -15,22 +15,25 @@
 
   <body>
     <!-- Navigation -->
-    <header>
+    <header class="navbar">
       <div class="logo">
-        <img src="icon/eb-logo.jpg" alt="EB Logo" />
+        <a href="index.html">
+          <img src="icon/eb-logo.jpg" alt="EB Logo" />
+        </a>
       </div>
       <nav>
         <ul>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#journal">JOURNAL</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Hero/Intro -->
     <section class="hero">
-      <h1 class="typewriter">HELLO!<span class="cursor">|</span></h1>
+      <h1 class="typewriter">HELLO!</h1>
       <p>
         My name is Emma Bui. I am an aspiring UX/UI designer aiming to
         collaborate with teams and take on freelance projects to create
@@ -39,26 +42,43 @@
     </section>
 
     <section class="intro">
-      <div class="intro-text">
-        <h2>Currently</h2>
-        <p>A dedicated Web Development student and animal lover</p>
-        <h2>Fueled by</h2>
-        <p>
-          Designing with compassion, human connection, and a love for multimedia
-          art, fashion, and textiles.
-        </p>
-      </div>
-      <div class="intro-img">
-        <img src="photos/emma.jpg" alt="Emma smiling in a blazer" />
+      <div class="rectangle-container">
+        <div class="intro-text">
+          <h2>Currently</h2>
+          <p>A dedicated Web Development student and animal lover</p>
+        </div>
+        <div class="intro-text">
+          <h2>Fueled by</h2>
+          <p>
+            Designing with compassion, human connection, and a love for
+            multimedia art, fashion, and textiles.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="photos/emma.jpg" alt="Emma smiling in a blazer" />
+        </div>
       </div>
     </section>
 
+    <section>
+      <a href="#about" class="scroll-down">
+        <img src="icon/arrow.jpg" alt="Scroll down arrow" />
+      </a>
+    </section>
+
     <!-- About Me -->
-    <section class="about">
-      <img src="photos/emma2.jpg" alt="Emma at Grand Canyon" />
+    <section id="about" class="about">
+      <img src="photos/emma2.jpg" alt="Emma at Grand Canyon, AZ" />
       <p>
         Born and raised in San Diego, California, I am a student passionate
-        about using technology to create thoughtful, intuitive experiences...
+        about using technology to create thoughtful, intuitive experiences. With
+        a background rooted in creativity and a growing foundation in web
+        development, I am learning how to blend aesthetics with purpose. I’m
+        especially interested in how visual storytelling and design can shape
+        the way people connect with digital spaces.
+        <br />
+        Outside of coding, you can find me capturing pictures of the world,
+        thinking of my next crochet piece, and indulging in delicious foods.
       </p>
     </section>
 
@@ -79,6 +99,9 @@
         <p>[PHP, SQL, MONITORING]</p>
       </div>
     </section>
+
+    <!-- Javascript -->
+    <script src="scripts.js"></script>
 
     <footer>
       <p>Let the flowers fall and the sun shine! &copy; 2025 | Emma Bui</p>
