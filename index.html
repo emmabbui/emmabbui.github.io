@@ -26,7 +26,7 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="projects.html">PROJECTS</a></li>
           <li><a href="journal.html">JOURNAL</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -106,7 +106,7 @@
 
     <!-- Projects -->
     <div class="section">
-      <h2>Projects</h2>
+      <h2>PROJECTS</h2>
     </div>
 
     <section class="projects">
@@ -171,27 +171,80 @@
       </div>
     </section>
     <div>
-      <a href="projects.html">VIEW ALL PROJECTS</a>
+      <a href="projects.html" class="view-link">VIEW ALL PROJECTS</a>
     </div>
 
     <!-- DESIGN JOURNAL/BLOG -->
-    <section class="journal">
-      <h2>Design Journal</h2>
-      <div>
-        <p>BLOG POST ONE</p>
+    <div class="section">
+      <h2>DESIGN JOURNAL</h2>
+    </div>
+
+    <section class="journal-section">
+      <div class="journal-container">
+        <div class="journal-post recent-post">
+          <img src="photos/flowerfield.jpg" alt="Recent blog post img" />
+          <h3>
+            FASHION FRENZY -- AN OUTFIT THAT GETS GENERATED, ALL IN AN APP
+          </h3>
+          <div class="post-footer">
+            <span>12 minutes</span>
+            <a href="post1.html" class="view-link">VIEW MORE</a>
+          </div>
+        </div>
+
+        <div class="journal-right-column">
+          <div class="journal-post small-post">
+            <h3>COLOR PALETTES THAT ITCH MY BRAIN RIGHT</h3>
+            <div class="post-footer">
+              <span>5 minutes</span>
+              <a href="post2.html" class="view-link">VIEW MORE</a>
+            </div>
+          </div>
+          <div class="journal-post small-post">
+            <h3>USING A WEBSITE BUILDER OVER HARD CODING</h3>
+            <div class="post-footer">
+              <span>11 minutes</span>
+              <a href="post3.html" class="view-link">ViEW MORE</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <div>
-      <a href="journal.html">VIEW ALL MY THOUGHTS</a>
+    <div class="view-all">
+      <a href="journal.html" class="view-link">VIEW ALL MY THOUGHTS</a>
     </div>
 
     <!-- CONTACT -->
-    <section class="contact">
-      INTERESTED IN WORKING WITH ME? LET’S CHAT!
+
+    <section id="contact" class="contact section">
+      <p>
+        INTERESTED IN WORKING WITH ME? <br />
+        LET’S CHAT!
+      </p>
+      <div>
+        <a href="mailto:ebui@student.sdccd.edu" class="contact-button"
+          >CONTACT ME</a
+        >
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html"
+            ><img src="assets/eb-logo.jpg" alt="EB Logo"
+          /></a>
+        </div>
+        <div class="footer-right">
+          <h2>EXPLORE</h2>
+          <div class="footer-links">
+            <a href="resume.pdf" target="_blank">RESUME</a>
+            <a href="https://www.linkedin.com/" target="_blank">LINKEDIN</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom"></p>
       <p>Let the flowers fall and the sun shine! &copy; 2025 | Emma Bui</p>
     </footer>
   </body>
