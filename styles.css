@@ -25,7 +25,6 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 600px;
 }
 /* Extras */
 .section {
@@ -95,20 +94,25 @@ nav a:hover {
 /* Hero/intro */
 .hero {
   padding: 5rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .hero h1 {
   font-size: 6rem;
   font-weight: 700;
   font-family: "Quicksand", sans-serif;
-  display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #271b1c;
+  display: inline-block;
+  overflow: hidden;
   width: 0;
   animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
   margin: 0;
 }
 .hero p {
+  width: 500px;
   text-align: center;
   margin: auto;
 }
@@ -467,6 +471,16 @@ html {
     margin-right: 32px;
   }
 
+  /* Hero/Intro */
+  .hero p {
+    width: 100%;
+  }
+
+  /* Skill Home/Main */
+  .skill {
+    width: 250px;
+  }
+
   /* Projects Home/Main */
   .projects {
     display: grid;
@@ -531,6 +545,9 @@ html {
     width: auto;
     border-right: none;
   }
+  .hero p {
+    width: 100%;
+  }
   .rectangle-container {
     position: relative;
     display: flex;
@@ -558,7 +575,7 @@ html {
     display: none;
   }
   .intro-text {
-    margin: 0 4rem;
+    margin: 0 3rem;
   }
   .intro-text:nth-child(1),
   .currently {
@@ -615,6 +632,11 @@ html {
     margin-top: 1rem;
   }
 
+  /* Skills Home/Main */
+  .skill {
+    width: 300px;
+  }
+
   /* Journal Home/Main */
   .journal-container {
     display: flex;
@@ -627,5 +649,10 @@ html {
   }
   .journal-post h3 {
     margin: 1rem 0;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
   }
 }
