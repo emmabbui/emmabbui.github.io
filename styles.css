@@ -436,11 +436,14 @@ html {
   .navbar-options {
     display: none;
     position: absolute;
+    background-color: rgba(230, 222, 243, 0.8);
+    backdrop-filter: blur(10px);
     top: 124px;
     right: 0;
     width: 100%;
     padding: 1rem;
   }
+
   .navbar-options.active {
     display: block;
   }
@@ -484,8 +487,8 @@ html {
   .navbar-options {
     display: none;
     position: absolute;
-    background-color: rgba(230, 222, 243, 0.3);
-    backdrop-filter: blur(10px); /* semi-transparent bg */
+    background-color: rgba(230, 222, 243, 0.9);
+    backdrop-filter: blur(10px);
     top: 124px;
     right: 0;
     width: 100%;
@@ -505,7 +508,11 @@ html {
   .navbar-options ul li a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #333;
+    color: #271b1c;
+    transition: color 0.3s ease;
+  }
+  .navbar-options ul li a:hover {
+    color: #634c88;
   }
   #hamburger {
     display: block;
