@@ -26,7 +26,6 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 600px;
-  margin: 0 auto 1.5rem;
 }
 /* Extras */
 .section {
@@ -58,7 +57,7 @@ header.navbar {
   align-items: center;
   background-color: rgba(230, 222, 243, 0.3);
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px); /* semi-transparent bg */
+  backdrop-filter: blur(10px);
 }
 header.navbar:hover {
   background-color: rgba(230, 222, 243, 0.8);
@@ -109,13 +108,16 @@ nav a:hover {
   animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
   margin: 0;
 }
+.hero p {
+  text-align: center;
+  margin: auto;
+}
 .intro {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e6def3;
 }
-
 .rectangle-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -125,7 +127,6 @@ nav a:hover {
   height: 250px;
   max-width: 1000px;
 }
-
 .intro-text {
   display: flex;
   flex-direction: column;
@@ -140,6 +141,9 @@ nav a:hover {
   justify-content: right;
   align-items: center;
   height: 100%;
+}
+.mobile-intro-img {
+  display: none;
 }
 .intro-img img {
   width: 230px;
@@ -431,8 +435,8 @@ html {
   /* Navigation */
   .navbar-options {
     display: none;
-    background-color: #fcfcfc;
-    top: 70px;
+    position: absolute;
+    top: 124px;
     right: 0;
     width: 100%;
     padding: 1rem;
@@ -448,11 +452,10 @@ html {
     flex-direction: column;
     gap: 1rem;
   }
-
   .navbar-options ul li a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #333;
+    color: #271b1c;
   }
   #hamburger {
     display: block;
@@ -478,8 +481,98 @@ html {
 /* Mobile phones */
 @media (max-width: 768px) {
   /* Navigation */
-  nav ul {
+  .navbar-options {
+    display: none;
+    position: absolute;
+    background-color: rgba(230, 222, 243, 0.3);
+    backdrop-filter: blur(10px); /* semi-transparent bg */
+    top: 124px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  .navbar-options.active {
+    display: block;
+  }
+  .navbar-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
+  }
+  .navbar-options ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  #hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Hero/Intro Main */
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    width: auto;
+    border-right: none;
+  }
+  .rectangle-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    background-color: #fcfcfc;
+    padding: 28px 0;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-intro-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .mobile-intro-img img {
+    width: 350px;
+    height: auto;
+  }
+  .intro-img {
+    display: none;
+  }
+  .intro-text {
+    margin: 0 4rem;
+  }
+  .intro-text:nth-child(1),
+  .currently {
+    order: 1;
+  }
+  .intro-text:nth-child(2),
+  .fueled {
+    order: 2;
+  }
+
+  /* About Home/Main */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about img {
+    width: 80%;
+    max-width: 300px;
+  }
+  .about p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 
   /* Projects Home/Main */
@@ -490,7 +583,6 @@ html {
     gap: 1rem;
     padding: 1rem;
   }
-
   .project {
     min-width: 80%;
     flex: 0 0 auto;
@@ -499,21 +591,32 @@ html {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
   .project img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 240px;
     border-radius: 8px 8px 0 0;
   }
-
   .project h3,
   .project p {
     padding: 0 1rem;
   }
-
   .view-link {
     display: block;
     text-align: center;
     margin-top: 1rem;
+  }
+
+  /* Journal Home/Main */
+  .journal-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .journal-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .journal-post h3 {
+    margin: 1rem 0;
   }
 }
