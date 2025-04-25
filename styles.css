@@ -487,12 +487,18 @@ html {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+    align-items: center;
+  }
+
+  .project p {
+    padding: 10px;
+    align-items: center;
   }
 
   .project img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 300px;
+    height: 250px;
+    align-items: center;
   }
 }
 
