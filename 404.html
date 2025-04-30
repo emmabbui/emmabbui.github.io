@@ -13,29 +13,68 @@
     />
   </head>
 
-
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <a href="index.html"
-          ><img src="assets/eb-logo.jpg" alt="EB Logo"
-        /></a>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/eb-logo.jpg" alt="EB Logo" />
+        </a>
       </div>
-      <div class="footer-right">
-        <h2>EXPLORE</h2>
-        <div class="footer-links">
-          <a href="#" target="_blank">RESUME</a>
-          <a href="https://www.linkedin.com/" target="_blank">LINKEDIN</a>
+
+      <!-- Hamburger icon -->
+      <div id="hamburger">☰</div>
+
+      <nav class="navbar-options">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="/not-ready/journal">JOURNAL</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 404 message -->
+  <main class="not-found">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">
+      Well, bugger! Looks like the page you’re crawling for doesn’t exist.
+    </h2>
+    <p>
+      Don't worry, even the best critters lose their trail sometimes.<br />
+      Try heading <a href="index.html">back home</a> or let your antennae
+      guide you through the nav.
+    </p>
+    <img
+      src="assets/stag-beetle.jpg"
+      alt="Crawling Critter"
+      class="bug-img"
+    />
+  </main>
+</body>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html"
+            ><img src="assets/eb-logo.jpg" alt="EB Logo"
+          /></a>
+        </div>
+        <div class="footer-right">
+          <h2>EXPLORE</h2>
+          <div class="footer-links">
+            <a href="/not-ready/resume" target="_blank">RESUME</a>
+            <a href="/not-ready/linkedin" target="_blank">LINKEDIN</a>
+          </div>
         </div>
       </div>
-    </div>
-    <p class="footer-bottom"></p>
-    <p>Let the flowers fall & the sun shine! &copy; 2025 | Emma Bui</p>
-  </footer>
+      <p class="footer-bottom"></p>
+      <p>Let the flowers fall & the sun shine! &copy; 2025 | Emma Bui</p>
+    </footer>
 
-  <!-- Javascript -->
-  <script src="script.js"></script>
-</body>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
 </html>

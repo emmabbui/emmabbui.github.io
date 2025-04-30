@@ -395,6 +395,39 @@ footer {
   color: #271b1c;
 }
 
+/* 404 PAGE */
+.not-found {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.not-found a {
+  color: #634c88;
+  text-decoration: underline;
+}
+.error-code {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #634c88;
+  margin: 0;
+}
+.error-message {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #271b1c;
+  margin: 10px 0 30px 0;
+}
+.bug-img {
+  width: 80px;
+  position: absolute;
+  top: 60%;
+  left: -100px;
+  animation: crawl-turning-beetle 20s linear infinite alternate;
+  transform-origin: center center;
+}
+
 /* Animations */
 
 /* HOME/MAIN PAGE */
@@ -425,6 +458,28 @@ html {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+/* Beetle crawling zigzag */
+@keyframes crawl-turning-beetle {
+  0% {
+    transform: translate(0vw, 0vh) rotate(0deg);
+  }
+  20% {
+    transform: translate(20vw, -10vh) rotate(315deg); /* Up-right */
+  }
+  40% {
+    transform: translate(40vw, 10vh) rotate(45deg); /* Down-right */
+  }
+  60% {
+    transform: translate(60vw, -8vh) rotate(315deg);
+  }
+  80% {
+    transform: translate(80vw, 12vh) rotate(45deg);
+  }
+  100% {
+    transform: translate(100vw, 0vh) rotate(0deg); /* Right end */
   }
 }
 
