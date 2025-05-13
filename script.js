@@ -28,7 +28,7 @@ accordionBtns.forEach((btn) => {
   });
 });
 
-// main page to projects page
+// Main page to projects page
 document.addEventListener("DOMContentLoaded", () => {
   const accordionButtons = document.querySelectorAll(".accordion-btn");
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // handles hash on page load
-  const hash = window.location.hash.substring(1); // remove #
+  const hash = window.location.hash.substring(1); // removes # from hash to leave only the value
   if (hash) {
     const targetBtn = document.getElementById(hash);
     if (targetBtn && targetBtn.classList.contains("accordion-btn")) {
