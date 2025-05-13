@@ -428,6 +428,55 @@ footer {
   transform-origin: center center;
 }
 
+/* PROJECTS PAGE */
+.projects-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #e6def3;
+}
+/* Accordion button */
+.accordion-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  background-color: #e6def3;
+  color: #271b1c;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.accordion-btn:hover {
+  background-color: #dcd5e7;
+}
+/* Accordion content (hidden by default) */
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: #fcfcfc;
+  border-top: 1px solid #ddd;
+}
+.accordion-content a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #271b1c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.accordion-content a:hover {
+  text-decoration: underline;
+}
+
 /* Animations */
 
 /* HOME/MAIN PAGE */
