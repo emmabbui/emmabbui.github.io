@@ -443,6 +443,24 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   background-color: #e6def3;
 }
+.project-card,
+.accordion-content {
+  text-align: left;
+}
+/* View Project/code */
+.project-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+.project-links a {
+  display: inline-block;
+  color: #271b1c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-links a:hover {
+  color: #634c88;
+}
 /* Accordion button */
 .accordion-btn {
   width: 100%;
@@ -475,6 +493,32 @@ footer {
 }
 .accordion-content a:hover {
   color: #634c88;
+}
+.accordion-content img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* APD Flyers images */
+.apd-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.apd-column {
+  display: block;
+  margin: auto;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.apd-column img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Animations */
@@ -759,6 +803,12 @@ html {
   }
   .journal-post h3 {
     margin: 1rem 0;
+  }
+
+  /* Projects */
+  .apd-column {
+    flex: 100%; /* apd projects imgs stack on top*/
+    max-width: 100%;
   }
 
   /* Footer */
