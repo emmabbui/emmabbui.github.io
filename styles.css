@@ -459,7 +459,7 @@ footer {
 .accordion-btn:hover {
   background-color: #dcd5e7;
 }
-/* Accordion content hidden by default */
+/* Accordion content - hidden by default */
 .accordion-content {
   display: none;
   padding: 1rem;
@@ -474,7 +474,6 @@ footer {
   font-weight: 500;
 }
 .accordion-content a:hover {
-  text-decoration: underline;
   color: #634c88;
 }
 
