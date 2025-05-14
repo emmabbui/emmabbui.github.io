@@ -497,7 +497,7 @@ footer {
 .accordion-content img {
   display: block;
   margin: 1rem auto;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -517,7 +517,7 @@ footer {
 .apd-column img {
   display: block;
   margin: 1rem auto;
-  max-width: 100%;
+  max-width: 250px;
   height: auto;
 }
 
@@ -806,6 +806,10 @@ html {
   }
 
   /* Projects */
+  .accordion-content img {
+    max-width: 70%;
+  }
+
   .apd-column {
     flex: 100%; /* apd projects imgs stack on top*/
     max-width: 100%;
