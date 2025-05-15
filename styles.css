@@ -525,7 +525,7 @@ footer {
 .blog-index {
   display: grid;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 .blog-card {
   background-color: #fcfcfc;
@@ -554,14 +554,16 @@ footer {
   color: #634c88;
   text-align: center;
 }
-.blog-post h1,
-.blog-post .post-date {
+.blog-post {
+  padding: 2rem 1rem;
+}
+.blog-post h1 {
   text-align: center;
 }
 .blog-post p {
   text-align: left;
   max-width: 700px;
-  margin: 0 auto 1.5rem auto; 
+  margin: 0 auto 1.5rem auto;
 }
 
 /* BREADCRUMBS */
