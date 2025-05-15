@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma Bui</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/eb-logo.jpg" alt="EB Logo" />
+        </a>
+      </div>
+
+      <!-- Hamburger icon -->
+      <div id="hamburger">☰</div>
+
+      <nav class="navbar-options">
+        <ul>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="journal.html">JOURNAL</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs">
+      <a href="index.html">Home</a> &gt; <a href="journal.html">Journal</a> &gt;
+      <span>FASHION FRENZY</span>
+    </nav>
+
+    <main class="blog-post">
+      <h2>FASHION FRENZY</h2>
+      <p class="post-date">8 min</p>
+      <p>
+        Over the summer of 2023, I had no idea what to wear. It was hot, and I
+        was overwhelmed by the amount of clothes I had in my closet. A moment
+        passed, and I thought, "What if I could just have my friend ask me what
+        clothing piece goes with the other?" Then, another moment passed. 2023
+        was the year I started to learn web development, design, and then I had
+        another thought: Let me create an app that randomly generates my outfit.
+        <br />
+        <br />
+        I got the inspiration of using pixelated, dot art used in video games,
+        and thought of random generator apps that people use for giveaways,
+        where they put in the person's name and click a button that generates
+        their outfit. The concept started simple: I imagined having a few
+        categories: tops, bottoms, accessories, shoes. I would list out what I
+        owned in each category, and the app would randomly select one from each.
+        It was like making a digital version of paper dolls, where you could mix
+        and match pieces, but smarter.
+        <br />
+        <br />
+        I sketched some UI ideas in Figma and looked into how randomness could
+        be generated through JavaScript. My goals in mind is to create arrays
+        for each clothing category, and then used a button that would randomly
+        select an item from each array and display the combination. As I was
+        writing and drawing more ideas, I thought more about user experience.
+        What if the combination didn't match? Should I include filters for
+        colors, styles, or weather? That led me into researching recommendation
+        systems. Not just making something random, but something thoughtful. I
+        did not go super deep into AI, but even simple logic. For example, “if
+        top is sleeveless, suggest a mini skirt or shorts” felt like a good idea
+        to include.
+        <br />
+        <br />
+        Eventually, it turned into more than just a personal app. It made me
+        realize how tech can solve tiny everyday frustrations, like standing in
+        front of your closet for 20 minutes. This project not only helped me
+        explore front end coding, but it also got me thinking about fashion
+        through the lens of function and systems.
+      </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html"
+            ><img src="assets/eb-logo.jpg" alt="EB Logo"
+          /></a>
+        </div>
+        <div class="footer-right">
+          <h2>EXPLORE</h2>
+          <div class="footer-links">
+            <a
+              href="emmaBui_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >RESUME</a
+            >
+            <a href="https://www.linkedin.com/in/emmabbui/" target="_blank"
+              >LINKEDIN</a
+            >
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom"></p>
+      <p>Let the flowers fall & the sun shine! &copy; 2025 | Emma Bui</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
