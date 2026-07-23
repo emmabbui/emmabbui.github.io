@@ -108,7 +108,9 @@ nav a:hover {
   display: inline-block;
   overflow: hidden;
   width: 0;
-  animation: typing 2s steps(6, end) forwards, blink 0.8s step-end infinite;
+  animation:
+    typing 2s steps(6, end) forwards,
+    blink 0.8s step-end infinite;
   margin: 0;
 }
 .hero p {
